@@ -3,6 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className="App">
@@ -14,6 +19,15 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
+    );
+  }
+}
+
+
+class userInput extends Component {
+  render() {
+    return (
+      <textarea name="user_text" id="textarea1" cols="30" rows="10"></textarea>
     );
   }
 }
