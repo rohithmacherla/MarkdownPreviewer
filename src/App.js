@@ -26,7 +26,9 @@ class App extends Component {
           <div className="q2">
             <h1>Instant Preview</h1>
           </div>
-          <div className="q3"></div>
+          <div className="q3">
+          <textarea name="text" id="textbox" cols="40" rows="19"></textarea>
+          </div>
           <div className="q4"></div>
         </div>
       </div>
