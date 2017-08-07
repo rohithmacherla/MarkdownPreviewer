@@ -1,35 +1,36 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+//marked documentation usage:
+var marked = require('marked');
 
 class App extends Component {
-  
+
   constructor(props) {
-    super(props);
+    super(props); 
+    this.state = { //assign state to hold the markdown text.
+      markedtext: ''
+    };
   }
 
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div className="title">
+            <h1>Github Flavored Markdown Previewer</h1>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="right">
+        <h1>Markdown Text: </h1>
+
+        </div>
+        <div className="left">
+        <h1>Instant Preview: </h1>
+
+        </div>
       </div>
     );
   }
 }
 
-
-class userInput extends Component {
-  render() {
-    return (
-      <textarea name="user_text" id="textarea1" cols="30" rows="10"></textarea>
-    );
-  }
-}
 
 export default App;
