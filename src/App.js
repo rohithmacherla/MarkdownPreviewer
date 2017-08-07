@@ -17,15 +17,17 @@ class App extends Component {
     return (
       <div className="App">
         <div className="title">
-            <h1>Github Flavored Markdown Previewer</h1>
+            <h1 className="titletext">Github Flavored Markdown Previewer</h1>
         </div>
-        <div className="right">
-        <h1>Markdown Text: </h1>
-
-        </div>
-        <div className="left">
-        <h1>Instant Preview: </h1>
-
+        <div className="display">
+          <div className="q1">
+            <h1>Markdown Text</h1>
+          </div>
+          <div className="q2">
+            <h1>Instant Preview</h1>
+          </div>
+          <div className="q3"></div>
+          <div className="q4"></div>
         </div>
       </div>
     );

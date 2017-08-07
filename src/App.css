@@ -1,17 +1,58 @@
 .App {
   text-align: center;
+  height: 654px;
+  margin: 0;
+  position: relative;
+}
+h1 {
+  margin: 0;
 }
 .title {
   border-bottom: 3px solid white;
   box-sizing: border-box;
+  margin: 0;
+  height: 20%;
 }
-.right {
-  float: left;
-  border: solid blue 1px;
-  box-sizing: border-box;
+.titletext {
+  padding-top: 1.3em;
 }
-.left {
+.display {
+  background-color: red;
+  height: 80%;
+}
+.q1 {
+  background-color: lightgrey;
+  height: 15%;
+  width: 50%;
+}
+.q1 h1 {
+  padding-top: .65em;
+  text-decoration: underline;
+}
+.q2 {
+  background-color: lightpink;
+  height: 15%;
+  width: 50%;
   float: right;
-  border: solid red 1px;
-  box-sizing: border-box;
+  position: relative;
+  top: -4.9em;
+}
+.q2 h1 {
+  padding-top: .65em;
+  text-decoration: underline;;
+}
+
+.q3 {
+  background-color: black;
+  height: 85%;
+  width: 50%;
+  float: left;
+}
+.q4 {
+  background-color: skyblue;
+  height: 85%;
+  width: 50%;
+  float: right;
+  position: relative;
+  top: -4.9em;
 }
