@@ -1,3 +1,3 @@
 # MarkdownPreviewer
-A ReactJS application that shows a preview for a specific formatted markdown textfield.
-
+A ReactJS application that shows an instant preview for text written in Github flavored markdown language. 
+![Display1 Screen](display.png)
