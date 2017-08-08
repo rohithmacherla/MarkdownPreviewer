@@ -8,9 +8,15 @@ class App extends Component {
 
   constructor(props) {
     super(props); 
+
     this.state = { //assign state to hold the markdown text.
-      markedtext: ''
+      markedtext: '# H1\n## H2\n### H3\n#### H4\n##### H5\n###### H6\n[Learn more about Github Flavored Markdown](https://guides.github.com/features/mastering-markdown/)'
     };
+    this.updateState = this.updateState.bind(this);
+  }
+
+  updateState(e) {
+    this.setState({markedtext: e.target.value});
   }
 
   render() {
@@ -27,9 +33,11 @@ class App extends Component {
             <h1>Instant Preview</h1>
           </div>
           <div className="q3">
-          <textarea name="text" id="textbox" cols="40" rows="19"></textarea>
+          <textarea onChange={this.updateState} value={this.state.markedtext} name="text" id="textbox" cols="40" rows="19"></textarea>
           </div>
-          <div className="q4"></div>
+          <div className="q4" >
+            <div dangerouslySetInnerHTML={{__html: marked(this.state.markedtext)}} />
+          </div>
         </div>
       </div>
     );
