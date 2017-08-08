@@ -15,6 +15,7 @@ h1 {
 }
 .titletext {
   padding-top: 1.3em;
+  text-shadow: 1px 0 0 lightpink;
 }
 .display {
   /*background-color: red;*/
@@ -54,18 +55,17 @@ h1 {
   border: 1px solid black;
   border-radius: 1%;
   box-sizing: border-box;
-  height: 88%;
-  width: 50%;
   float: right;
   position: relative;
-  top: -4.9em;
-  width: 450px;
-  height: 350px;
-  right: 3.9em;
+  top: -4.95em;
+  width: 342px;
+  height: 418px;
+  right: 7em;
+  padding-left: 4px;
   overflow-x: scroll;
 }
 #textbox {
-  font-size: 1.1em;
+  font-size: 1.0em;
   resize: none;
   border-radius: 1%;
   overflow: scroll;
